@@ -3,6 +3,7 @@ import 'home_page.dart';
 import 'team_page.dart';
 import 'contact_page.dart';
 import 'profile_page.dart';
+import 'gallery_page.dart';
 import 'colors.dart'; // Import the colors
 
 void main() {
@@ -21,8 +22,9 @@ class _MyAppState extends State<MyApp> {
 
   static const List<Widget> _pages = <Widget>[
     HomePage(),
-    TeamPage(),
     ContactPage(),
+    GalleryPage(),
+    TeamPage(),
     ProfilePage(),
   ];
 
@@ -52,11 +54,15 @@ class _MyAppState extends State<MyApp> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.group),
-              label: 'Team',
+              label: 'Contact',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.image),
+              label: 'Gallery',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.contact_mail),
-              label: 'Contact',
+              label: 'Team',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
